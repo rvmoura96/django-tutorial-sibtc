@@ -1,0 +1,4 @@
+.myvenv
+*.log
+*.sqlite3
+.env
