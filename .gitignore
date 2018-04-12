@@ -3,3 +3,4 @@ myvenv
 *.log
 *.sqlite3
 .env
+__pycache__
