@@ -38,19 +38,3 @@ class LoginRequiredPasswordChangeTests(TestCase):
         login_url = reverse('login')
         response = self.client.get(url)
         self.assertRedirects(response, f'{login_url}?next={url}')
-
-#class PasswordChangeTestCase(TestCase):
-    #def setUp(self):
-        #super().setUp({
-            #'old_password': 'old_password',
-            #'new_password1': 'new_password',
-            #'new_password2': 'new_password',
-        #})
-#
-    #def test_redirection(self):
-        #self.assertRedirects(self.response, reverse('password_change_done'))
-#
-#
-    #def test_password_changed(self):
-        #self.user.refresh_from_db()
-        #self.assertTrue(self.user.check_password('new_password'))
